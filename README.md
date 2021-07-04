@@ -1,6 +1,6 @@
 # peru_conareme_resultados
 
-[![zenodo](https://zenodo.org/badge/382893590.svg)](http://doi.org/10.5281/zenodo.5068745)
+![zenodo](https://zenodo.org/badge/382893590.svg)
 
 ## About the data
 
