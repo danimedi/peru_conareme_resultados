@@ -1,5 +1,7 @@
 # peru_conareme_resultados
 
+[![zenodo](https://zenodo.org/badge/382893590.svg)](http://doi.org/10.5281/zenodo.5068745)
+
 ## About the data
 
 This repository contains the data, and the code used to obtain and clean this data, of the people who applied and those who got residency (medical specialty) spots during the different processes during the last years.
