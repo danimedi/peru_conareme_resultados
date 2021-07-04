@@ -1,6 +1,6 @@
 # peru_conareme_resultados
 
-> Zenodo link: http://doi.org/10.5281/zenodo.5068745
+> Zenodo link: https://zenodo.org/record/5068770
 
 ## About the data
 
