@@ -1,0 +1,1 @@
+There are some things to do, due to time restrictions, only a few variables were included in the final data set, but there are more variables available, code to "clean" these variables is something to do (e.g., change the names of the columns, collapse columns with similar data, etc.).
