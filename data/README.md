@@ -1,4 +1,8 @@
-The data set was created with a "tidy data" approach. Each row representing an observation for an individual in a given year, and each column representing a variable.
+The data sets were created with a "tidy data" approach. Each row representing an observation for an individual in a given year, and each column representing a variable.
+
+`data_set_deidentified.csv` contains the final data but without the columns containing sensible information that could be used to identify the individuals.
+
+`data_set.csv`contains the final data with all the information but this is not publicly available.
 
 The variables (columns) available are:
 
