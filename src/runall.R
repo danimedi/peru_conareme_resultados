@@ -35,6 +35,16 @@ data_set <- funs$clean_names(data_set)
 # Add gender column
 data_set <- mutate(data_set, gender = funs$get_gender(Nombres))
 
+# Fix university names
+data_set <- mutate(
+  data_set,
+  Universidad_postulantes = funs$fix_university_names(Universidad_postulantes),
+  Universidad_ingresantes = funs$fix_university_names(Universidad_ingresantes)
+)
+
+
+
+
 # Save data
 write_csv(data_set, "data/data_set.csv")
 
