@@ -1,0 +1,1 @@
+This data set is used to obtain the gender from the first names of the individuals. The data was initially obtained from [another data base](https://github.com/MatthiasWinkelmann/firstname-database) and it was completed manually with the gender of known names. Most of those names were variations of names with defined gender. Names with ambiguity were deleted.
