@@ -60,4 +60,4 @@ deidentify <- function(df) {
   select(df, -starts_with(c("Nombres", "Apellido")))
 }
 data_set_deidentified <- deidentify(data_set)
-write_csv(data_set, "data/data_set_deidentified.csv")
+write_csv(data_set_deidentified, "data/data_set_deidentified.csv")
