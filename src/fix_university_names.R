@@ -9,6 +9,9 @@
 #'   names that do not need correction stay the same.
 #' @export
 fix_university_names <- function(university_names) {
+  
+  university_names <- stringr::str_remove(university_names, "^\\w+ - ")
+  
   lookup_postulantes <- c(
     "AUSMP" = "USMP", "DITHURP" = "URP", "EMMAUNMSM" = "UNMSM", "ENASUPCH" = "UPCH",
     "GOUSMP" = "USMP", "HUNT" = "UNT", "HURP" = "URP", "IKUNSA" = "UNSA",
@@ -21,7 +24,7 @@ fix_university_names <- function(university_names) {
     "N FEURNMASNMDEZ" = "UNMSM"
   )
   lookup_ingresantes <- c(
-    "OUSMP" = "USMP", "SURP" = "URP"
+    "OUSMP" = "USMP", "SURP" = "URP", "ESUNP" = "UNP"
   )
   lookup_universities <- c(lookup_postulantes , lookup_ingresantes)
   ifelse(
