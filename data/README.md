@@ -12,3 +12,5 @@ The variables (columns) available are:
 - `Apellido Materno`: last name from mother
 - `Especialidad/SubEspecialidad_postulantes` and `Especialidad/SubEspecialidad_ingresantes`: specialty/subspecialty during application and that in which the person got in, respectively
 - `Universidad_postulantes` and `Universidad_ingresantes`: university
+- `gender`: gender obtained from the first name
+- `department_*`: department obtained from university
