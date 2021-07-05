@@ -42,6 +42,13 @@ data_set <- mutate(
   Universidad_ingresantes = funs$fix_university_names(Universidad_ingresantes)
 )
 
+# Get the departments
+data_set <- mutate(
+  data_set,
+  department_postulantes = funs$get_department_from_university(Universidad_postulantes),
+  department_ingresantes = funs$get_department_from_university(Universidad_ingresantes)
+)
+
 
 
 
