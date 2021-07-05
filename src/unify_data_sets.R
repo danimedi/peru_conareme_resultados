@@ -142,6 +142,11 @@ unify_data_sets <- function(dir) {
     if (length(i_postulantes) == 1 & length(i_ingresantes) == 1) {
       postulantes <- read_data(filenames_year[i_postulantes], year = year)
       ingresantes <- read_data(filenames_year[i_ingresantes], year = year)
+      # During the year 2021 the column for university of 'postulantes' has
+      # another name
+      if (year == "2021") {
+        postulantes <- dplyr::rename(postulantes, Universidad = `Macro Sede`)
+      }
       join_postulantes_ingresantes(postulantes, ingresantes)
     } else if(length(i_postulantes) == 1 & length(i_ingresantes) == 0) {
       remove_unnecessary_columns(
