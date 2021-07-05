@@ -173,7 +173,7 @@ unify_data_sets <- function(dir) {
   collapse_column <- function(df, col) {
     destiny_column_name <- paste0(col, suffixes[1])
     destiny_column <- df[[destiny_column_name]]
-    joined_col <- ifelse(is.na(destiny_column), col, destiny_column)
+    joined_col <- ifelse(!is.na(df[[col]]), df[[col]], destiny_column)
     df <- df[names(df) != col]
     df[[destiny_column_name]] <- joined_col
     df
